@@ -122,7 +122,7 @@ var TodoList = function (_React$Component2) {
     value: function componentDidMount() {
       var _this4 = this;
 
-      fetch('http://localhost:3000/todos/').then(function (response) {
+      fetch('/todos/').then(function (response) {
         return response.json();
       }).then(function (data) {
         _this4.setState(function (state) {
